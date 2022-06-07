@@ -11,7 +11,9 @@ import SwiftUI
 struct GymAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView(workouts: Workouts.sampleData)
+            }
         }
     }
 }

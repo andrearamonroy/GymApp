@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    let workouts : [Workouts]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List {
+            ForEach(workouts) { workout in
+                NavigationLink(destination: Text(workout.title)) {
+                    CardView (workout: workout)
+                }
+                .listRowBackground(workout.theme.mainColor)
+            }
+        }
+        .navigationTitle("Workouts")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView {
+            ContentView(workouts: Workouts.sampleData)
+            
+        }
     }
 }

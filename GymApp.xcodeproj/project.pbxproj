@@ -14,6 +14,9 @@
 		0D720354284D66BC00370FEF /* GymAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D720353284D66BC00370FEF /* GymAppTests.swift */; };
 		0D72035E284D66BC00370FEF /* GymAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D72035D284D66BC00370FEF /* GymAppUITests.swift */; };
 		0D720360284D66BC00370FEF /* GymAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D72035F284D66BC00370FEF /* GymAppUITestsLaunchTests.swift */; };
+		0D72036D284D6AB900370FEF /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D72036C284D6AB800370FEF /* Workouts.swift */; };
+		0D720370284D6B6E00370FEF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D72036F284D6B6E00370FEF /* Theme.swift */; };
+		0D720372284D6E8700370FEF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D720371284D6E8700370FEF /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		0D720359284D66BC00370FEF /* GymAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D72035D284D66BC00370FEF /* GymAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppUITests.swift; sourceTree = "<group>"; };
 		0D72035F284D66BC00370FEF /* GymAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D72036C284D6AB800370FEF /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
+		0D72036F284D6B6E00370FEF /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		0D720371284D6E8700370FEF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,10 @@
 		0D720341284D66BA00370FEF /* GymApp */ = {
 			isa = PBXGroup;
 			children = (
+				0D72036E284D6B5100370FEF /* Main */,
 				0D720342284D66BA00370FEF /* GymAppApp.swift */,
 				0D720344284D66BA00370FEF /* ContentView.swift */,
+				0D720373284D6E8F00370FEF /* Views */,
 				0D720346284D66BC00370FEF /* Assets.xcassets */,
 				0D720348284D66BC00370FEF /* Preview Content */,
 			);
@@ -125,6 +133,23 @@
 				0D72035F284D66BC00370FEF /* GymAppUITestsLaunchTests.swift */,
 			);
 			path = GymAppUITests;
+			sourceTree = "<group>";
+		};
+		0D72036E284D6B5100370FEF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0D72036C284D6AB800370FEF /* Workouts.swift */,
+				0D72036F284D6B6E00370FEF /* Theme.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0D720373284D6E8F00370FEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D720371284D6E8700370FEF /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D720345284D66BA00370FEF /* ContentView.swift in Sources */,
+				0D720370284D6B6E00370FEF /* Theme.swift in Sources */,
 				0D720343284D66BA00370FEF /* GymAppApp.swift in Sources */,
+				0D72036D284D6AB900370FEF /* Workouts.swift in Sources */,
+				0D720372284D6E8700370FEF /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
